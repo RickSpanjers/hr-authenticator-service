@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
+  profiles: dev
+  application:
+    name: authenticator-service
+  cloud:
+    config:
+      uri:
+      username:
+      password:
+
+---
+
+spring:
+  profiles: prod
+  application:
+    name: authenticator-service
+  cloud:
+    config:
+      uri:
+      username:
+      password:
